@@ -19,15 +19,13 @@ public class CatTest {
     BufferedReader r3 = null;
 
     // TODO: change these to paths!
-    String INFILE = "PATH TO SOME FILE A";
-    String OUTFILE = "PATH TO A DIFFERENT, EMPTY FILE B";
+    String INFILE = "songs/FireworkParody.txt";
+    String OUTFILE = "output.txt";
 
     try (
             BufferedReader r1 =new BufferedReader(new FileReader(INFILE));
             BufferedWriter w1 = new BufferedWriter(new FileWriter(OUTFILE));
             ){
-
-
       Cat.cat(r1, w1);
 
       // set up readers for the two files
